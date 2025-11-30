@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faña Sillas y Más - Catálogo de Sillas para Iglesia</title>
+    <title>Medina Sillas y Más - Catálogo de Sillas para Iglesia</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,12 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h1>Faña <span>Sillas y Más</span></h1>
+                <h1>Medina <span>Sillas y Más</span></h1>
             </div>
             <nav class="nav">
                 <a href="#inicio">Inicio</a>
                 <a href="#catalogo">Catálogo</a>
+                <a href="#nosotros">Nosotros</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
@@ -40,199 +41,256 @@
             <p class="section-subtitle">Selecciona tus productos y contáctanos por WhatsApp</p>
             
             <div class="products-grid">
-                <!-- Producto 1 -->
-                <div class="product-card">
+                <!-- Producto 1: Louisville Premium Sin Parrillas -->
+                <div class="product-card" onclick="openGallery('louisville-sin-parrillas')">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=500&h=500&fit=crop" alt="Silla Clásica" onerror="this.src='https://images.pexels.com/photos/116910/pexels-photo-116910.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop'">
+                        <img src="images/Louisville Premium Sin Parrillas 0062/image (46).png" alt="Louisville Premium Sin Parrillas 0062">
                         <div class="product-badge">Popular</div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Silla Clásica Premium</h3>
-                        <p class="product-description">Silla resistente y cómoda, ideal para uso diario en iglesias.</p>
+                        <h3 class="product-name">Louisville Premium Sin Parrillas 0062</h3>
+                        <p class="product-description">Silla premium sin parrillas para máximo confort.</p>
                         <div class="product-features">
-                            <span>✓ Tapizado de calidad</span>
-                            <span>✓ Estructura metálica</span>
-                            <span>✓ Apilable</span>
+                            <span>✓ Diseño premium</span>
+                            <span>✓ Máximo confort</span>
                         </div>
                         <div class="product-actions">
                             <div class="quantity-control">
-                                <button class="qty-btn" onclick="decreaseQuantity(this)">-</button>
-                                <input type="number" class="qty-input" value="0" min="0">
-                                <button class="qty-btn" onclick="increaseQuantity(this)">+</button>
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
                             </div>
                             <span class="product-price">Consultar precio</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Producto 2 -->
-                <div class="product-card">
+                <!-- Producto 2: Louisville Premium con Parrillas -->
+                <div class="product-card" onclick="openGallery('louisville-con-parrillas')">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500&h=500&fit=crop" alt="Silla Confort" onerror="this.src='https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop'">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Silla Confort Plus</h3>
-                        <p class="product-description">Mayor comodidad con acolchado extra, perfecta para servicios largos.</p>
-                        <div class="product-features">
-                            <span>✓ Acolchado extra</span>
-                            <span>✓ Respaldo ergonómico</span>
-                            <span>✓ Base reforzada</span>
-                        </div>
-                        <div class="product-actions">
-                            <div class="quantity-control">
-                                <button class="qty-btn" onclick="decreaseQuantity(this)">-</button>
-                                <input type="number" class="qty-input" value="0" min="0">
-                                <button class="qty-btn" onclick="increaseQuantity(this)">+</button>
-                            </div>
-                            <span class="product-price">Consultar precio</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Producto 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop" alt="Silla Ejecutiva" onerror="this.src='https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop'">
+                        <img src="images/Louisville Premium con parrillas 00065/21_inch_louisville_Premium_Gray_Blue_with_book_racks-removebg-preview - Copy.png" alt="Louisville Premium con parrillas 00065">
                         <div class="product-badge">Premium</div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Silla Ejecutiva</h3>
-                        <p class="product-description">Diseño elegante para áreas especiales y pastores.</p>
+                        <h3 class="product-name">Louisville Premium con Parrillas 00065</h3>
+                        <p class="product-description">Silla premium con portamisales integrado.</p>
                         <div class="product-features">
-                            <span>✓ Diseño premium</span>
-                            <span>✓ Brazos acolchados</span>
-                            <span>✓ Acabado de lujo</span>
+                            <span>✓ Con portamisales</span>
+                            <span>✓ Alta durabilidad</span>
                         </div>
                         <div class="product-actions">
                             <div class="quantity-control">
-                                <button class="qty-btn" onclick="decreaseQuantity(this)">-</button>
-                                <input type="number" class="qty-input" value="0" min="0">
-                                <button class="qty-btn" onclick="increaseQuantity(this)">+</button>
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
                             </div>
                             <span class="product-price">Consultar precio</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Producto 4 -->
-                <div class="product-card">
+                <!-- Producto 3: Sillas de Eventos -->
+                <div class="product-card" onclick="openGallery('sillas-eventos')">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&h=500&fit=crop" alt="Silla Infantil" onerror="this.src='https://images.pexels.com/photos/271711/pexels-photo-271711.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop'">
+                        <img src="images/sillas de eventos/CBMW-202.jpg" alt="Sillas de Eventos">
+                        <div class="product-badge">Elegante</div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Silla Infantil</h3>
-                        <p class="product-description">Especialmente diseñada para los más pequeños de la congregación.</p>
+                        <h3 class="product-name">Sillas de Eventos</h3>
+                        <p class="product-description">Sillas elegantes perfectas para eventos especiales.</p>
                         <div class="product-features">
-                            <span>✓ Tamaño infantil</span>
-                            <span>✓ Colores alegres</span>
-                            <span>✓ Segura y resistente</span>
+                            <span>✓ Diseño elegante</span>
+                            <span>✓ Múltiples estilos</span>
                         </div>
                         <div class="product-actions">
                             <div class="quantity-control">
-                                <button class="qty-btn" onclick="decreaseQuantity(this)">-</button>
-                                <input type="number" class="qty-input" value="0" min="0">
-                                <button class="qty-btn" onclick="increaseQuantity(this)">+</button>
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
                             </div>
                             <span class="product-price">Consultar precio</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Producto 5 -->
-                <div class="product-card">
+                <!-- Producto 4: Louisville Convencional -->
+                <div class="product-card" onclick="openGallery('louisville-convencional')">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=500&h=500&fit=crop" alt="Banca Iglesia" onerror="this.src='https://images.pexels.com/photos/7937496/pexels-photo-7937496.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop'">
+                        <img src="images/Louisville Convencional 0059/image (1).png" alt="Louisville Convencional 0059">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Banca para Iglesia</h3>
-                        <p class="product-description">Banca tradicional de madera con capacidad múltiple.</p>
+                        <h3 class="product-name">Louisville Convencional 0059</h3>
+                        <p class="product-description">Modelo clásico y resistente para uso diario.</p>
                         <div class="product-features">
-                            <span>✓ Madera de calidad</span>
-                            <span>✓ 3-4 personas</span>
                             <span>✓ Diseño clásico</span>
+                            <span>✓ Muy resistente</span>
                         </div>
                         <div class="product-actions">
                             <div class="quantity-control">
-                                <button class="qty-btn" onclick="decreaseQuantity(this)">-</button>
-                                <input type="number" class="qty-input" value="0" min="0">
-                                <button class="qty-btn" onclick="increaseQuantity(this)">+</button>
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
                             </div>
                             <span class="product-price">Consultar precio</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Producto 6 -->
-                <div class="product-card">
+                <!-- Producto 5: Louisville LS-10601-135 -->
+                <div class="product-card" onclick="openGallery('louisville-ls')">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&h=500&fit=crop" alt="Silla Plegable" onerror="this.src='https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop'">
+                        <img src="images/Louisville LS-10601-135/IMG-20191213-WA0000.png" alt="Louisville LS-10601-135">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Silla Plegable</h3>
-                        <p class="product-description">Práctica y fácil de almacenar para eventos especiales.</p>
+                        <h3 class="product-name">Louisville LS-10601-135</h3>
+                        <p class="product-description">Modelo especial Louisville con características únicas.</p>
                         <div class="product-features">
-                            <span>✓ Fácil almacenaje</span>
-                            <span>✓ Ligera y resistente</span>
-                            <span>✓ Portátil</span>
+                            <span>✓ Diseño especial</span>
+                            <span>✓ Gran comodidad</span>
                         </div>
                         <div class="product-actions">
                             <div class="quantity-control">
-                                <button class="qty-btn" onclick="decreaseQuantity(this)">-</button>
-                                <input type="number" class="qty-input" value="0" min="0">
-                                <button class="qty-btn" onclick="increaseQuantity(this)">+</button>
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
                             </div>
                             <span class="product-price">Consultar precio</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Producto 7 -->
-                <div class="product-card">
+                <!-- Producto 6: Auditorium School Version -->
+                <div class="product-card" onclick="openGallery('auditorium-school')">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1519947486511-46149fa0a254?w=500&h=500&fit=crop" alt="Silla Coral" onerror="this.src='https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop'">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Silla para Coral</h3>
-                        <p class="product-description">Diseñada especialmente para el área del coro.</p>
-                        <div class="product-features">
-                            <span>✓ Diseño compacto</span>
-                            <span>✓ Respaldo medio</span>
-                            <span>✓ Apilable</span>
-                        </div>
-                        <div class="product-actions">
-                            <div class="quantity-control">
-                                <button class="qty-btn" onclick="decreaseQuantity(this)">-</button>
-                                <input type="number" class="qty-input" value="0" min="0">
-                                <button class="qty-btn" onclick="increaseQuantity(this)">+</button>
-                            </div>
-                            <span class="product-price">Consultar precio</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Producto 8 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=500&h=500&fit=crop" alt="Silla Auditorio" onerror="this.src='https://images.pexels.com/photos/2995012/pexels-photo-2995012.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop'">
+                        <img src="images/Auditorium School Version %230069/butacas azules.jpg" alt="Auditorium School Version #0069">
                         <div class="product-badge">Nuevo</div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Silla Auditorio</h3>
-                        <p class="product-description">Silla fija para instalación permanente en auditorios.</p>
+                        <h3 class="product-name">Auditorium School Version #0069</h3>
+                        <p class="product-description">Butacas para auditorios y salones escolares.</p>
                         <div class="product-features">
+                            <span>✓ Para auditorios</span>
                             <span>✓ Instalación fija</span>
-                            <span>✓ Muy cómoda</span>
-                            <span>✓ Sistema de filas</span>
                         </div>
                         <div class="product-actions">
                             <div class="quantity-control">
-                                <button class="qty-btn" onclick="decreaseQuantity(this)">-</button>
-                                <input type="number" class="qty-input" value="0" min="0">
-                                <button class="qty-btn" onclick="increaseQuantity(this)">+</button>
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
                             </div>
                             <span class="product-price">Consultar precio</span>
                         </div>
                     </div>
+                </div>
+
+                <!-- Producto 7: Classica 0043 -->
+                <div class="product-card" onclick="openGallery('classica')">
+                    <div class="product-image">
+                        <img src="images/Classica 0043/20250604_161708.png" alt="Classica 0043">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classica 0043</h3>
+                        <p class="product-description">Diseño clásico y elegante para iglesias.</p>
+                        <div class="product-features">
+                            <span>✓ Estilo tradicional</span>
+                            <span>✓ Elegante</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
+                            </div>
+                            <span class="product-price">Consultar precio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 8: Performer 0089 -->
+                <div class="product-card" onclick="openGallery('performer')">
+                    <div class="product-image">
+                        <img src="images/Performer 0089/IMG-20190709-WA0023.jpg" alt="Performer 0089">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Performer 0089</h3>
+                        <p class="product-description">Silla de alto rendimiento y confort.</p>
+                        <div class="product-features">
+                            <span>✓ Alto rendimiento</span>
+                            <span>✓ Ergonómica</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
+                            </div>
+                            <span class="product-price">Consultar precio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 9: Chairs with ARM REST -->
+                <div class="product-card" onclick="openGallery('arm-rest')">
+                    <div class="product-image">
+                        <img src="images/Chairs with ARM REST 00050/IMG-20250611-WA0005 (1).png" alt="Chairs with ARM REST 00050">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Chairs with ARM REST 00050</h3>
+                        <p class="product-description">Sillas con descansabrazos para mayor comodidad.</p>
+                        <div class="product-features">
+                            <span>✓ Con descansabrazos</span>
+                            <span>✓ Muy cómoda</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
+                            </div>
+                            <span class="product-price">Consultar precio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 10: Optimas 0050 -->
+                <div class="product-card" onclick="openGallery('optimas-0050')">
+                    <div class="product-image">
+                        <img src="images/Optimas 0050/20250708_074659.png" alt="Optimas 0050">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Optimas 0050</h3>
+                        <p class="product-description">Silla óptima, resistente y económica.</p>
+                        <div class="product-features">
+                            <span>✓ Buena relación calidad-precio</span>
+                            <span>✓ Resistente</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn" onclick="event.stopPropagation(); decreaseQuantity(this)">-</button>
+                                <input type="number" class="qty-input" value="0" min="0" onclick="event.stopPropagation()">
+                                <button class="qty-btn" onclick="event.stopPropagation(); increaseQuantity(this)">+</button>
+                            </div>
+                            <span class="product-price">Consultar precio</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Modal de Galería -->
+            <div id="galleryModal" class="gallery-modal">
+                <div class="gallery-content">
+                    <span class="gallery-close" onclick="closeGallery()">&times;</span>
+                    <h2 id="galleryTitle" class="gallery-title"></h2>
+                    <div class="gallery-slider">
+                        <button class="gallery-nav prev" onclick="changeSlide(-1)">❮</button>
+                        <img id="galleryImage" class="gallery-image" src="" alt="">
+                        <button class="gallery-nav next" onclick="changeSlide(1)">❯</button>
+                    </div>
+                    <div class="gallery-counter">
+                        <span id="currentSlide">1</span> / <span id="totalSlides">1</span>
+                    </div>
+                    <div class="gallery-thumbnails" id="galleryThumbnails"></div>
                 </div>
             </div>
 
@@ -252,32 +310,137 @@
         </div>
     </section>
 
-    <!-- Beneficios Section -->
-    <section class="benefits">
+    <!-- Sobre Nosotros Section -->
+    <section class="about-us" id="nosotros">
         <div class="container">
-            <h2 class="section-title">¿Por qué elegirnos?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">🏆</div>
-                    <h3>Calidad Garantizada</h3>
-                    <p>Productos de la más alta calidad con garantía incluida</p>
+            <div class="about-header">
+                <h2 class="section-title">Medina Sillas & Más</h2>
+                <p class="about-year">2025-2026</p>
+                <p class="about-slogan">"Construyendo espacios de alabanza, una silla a la vez."</p>
+            </div>
+
+            <div class="owner-section">
+                <div class="owner-image">
+                    <img src="images/dueno.jpg" alt="Propietario - Medina Sillas & Más">
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🚚</div>
-                    <h3>Envío a Todo el País</h3>
-                    <p>Entregamos tu pedido donde lo necesites</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💰</div>
-                    <h3>Mejores Precios</h3>
-                    <p>Precios competitivos y facilidades de pago</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">👥</div>
-                    <h3>Asesoría Personalizada</h3>
-                    <p>Te ayudamos a elegir lo mejor para tu iglesia</p>
+                <div class="owner-info">
+                    <h3>Nuestro Compromiso</h3>
+                    <p>Con años de experiencia en el mercado, nos especializamos en ofrecer soluciones de mobiliario que transforman espacios. Cada proyecto es único y nos apasiona ser parte de esos momentos especiales que nuestros clientes crean.</p>
+                    <p>Nuestra misión es simple: proveer calidad, estilo y confort en cada silla que entregamos.</p>
                 </div>
             </div>
+
+            <div class="why-choose-us">
+                <h3 class="subsection-title">¿Por Qué Elegirnos?</h3>
+                <p class="intro-text">Porque no vendemos sillas, diseñamos experiencias.</p>
+                <p class="description-text">En cada pieza combinamos estilo, confort y durabilidad, con la visión de ayudarte a crear espacios memorables, funcionales y elegantes.</p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4>Variedad que se adapta a ti</h4>
+                        <p>Desde sillas ejecutivas hasta butacas para iglesias, bodas y eventos sociales. Todo en un solo lugar.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Calidad garantizada</h4>
+                        <p>Materiales resistentes, acabados finos y ergonomía profesional. Probadas en cientos de eventos exitosos.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Entregas rápidas y seguras</h4>
+                        <p>Sabemos que tu tiempo vale oro. Llevamos tus pedidos donde los necesites, cuando los necesites.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Estilo que transforma espacios</h4>
+                        <p>Cada diseño aporta carácter, beleza y funcionalidad. Ideal para decoradores, organizadores y líderes que buscan marcar diferencia.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Atención personalizada</h4>
+                        <p>Te acompañamos en todo el proceso, con asesoría clara, directa y sin rodeos. Tu tranquilidad es parte del trato.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conference Chairs Section -->
+    <section class="conference-section">
+        <div class="container">
+            <div class="conference-header">
+                <h3 class="category-label">Sillas para</h3>
+                <h2 class="category-title">SALAS DE CONFERENCIAS</h2>
+                <p class="category-subtitle">Clase, estilo y comodidad en una sola llamada. ¿La hacemos?</p>
+            </div>
+
+            <div class="innovation-block">
+                <h3 class="innovation-title">Innovación y Estilo que Llegaron para Quedarse</h3>
+                <p class="innovation-text">"Estos diseños exclusivos, reconocidos y demandados en todo el mundo, ahora están disponibles en la República Dominicana. Sillas que combinan estilo, innovación y máxima comodidad para transformar cualquier espacio de adoración o reunión en un lugar moderno y acogedor. Eleva la experiencia de tu congregación con mobiliario que refleja calidad global y el compromiso con el bienestar de tu comunidad."</p>
+            </div>
+
+            <div class="chairs-showcase">
+                <h3 class="showcase-title">Butacas 100% Americanas para Conferencias</h3>
+                
+                <div class="showcase-grid">
+                    <div class="showcase-card" style="border-top: 4px solid #a47052;">
+                        <h4>Sala VIP de Conferencias</h4>
+                        <p>Diseño moderno y acabados premium para espacios exclusivos. Ideal para recibir conferencistas, panelistas y líderes de alto nivel.</p>
+                    </div>
+                    <div class="showcase-card" style="border-top: 4px solid #4c2938;">
+                        <h4>Salón de Adoración y Reflexión</h4>
+                        <p>Sillas duraderas, diseñadas para acompañar largas sesiones de culto y enseñanza. Ideales para crear un ambiente de paz y concentración en la comunidad.</p>
+                    </div>
+                    <div class="showcase-card" style="border-top: 4px solid #67553f;">
+                        <h4>Auditorio Corporativo</h4>
+                        <p>Sillas modernas y elegantes que ofrecen confort durante largas jornadas. Perfectas para presentaciones, congresos y foros ejecutivos.</p>
+                    </div>
+                </div>
+
+                <div class="color-palette">
+                    <h4>Paleta de colores</h4>
+                    <div class="colors-display">
+                        <div class="color-box" style="background-color: #a47052;"></div>
+                        <div class="color-box" style="background-color: #4c2938;"></div>
+                        <div class="color-box" style="background-color: #67553f;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modern-design">
+                <h3 class="design-title">Diseño Moderno Que Inspira Confianza</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <div class="container">
+            <div class="events-header">
+                <h3 class="category-label">Sillas para</h3>
+                <h2 class="category-title">EVENTOS</h2>
+            </div>
+
+            <div class="events-content">
+                <h3 class="events-main-title">Sillas que Celebran Momentos Inolvidables</h3>
+                <p class="events-subtitle">Elegancia versátil para bodas, quinceaños y eventos de alto impacto.</p>
+
+                <div class="events-description">
+                    <p>Cuando la ocasión exige perfección, cada detalle cuenta. Nuestras sillas para eventos están diseñadas no solo para brindar comodidad, sino para convertirse en parte esencial de la decoración. Con líneas limpias, acabados refinados y materiales resistentes, estas piezas elevan cualquier espacio con un toque de distinción y glamour.</p>
+
+                    <p>Fabricadas para adaptarse a múltiples estilos —clásico, moderno, rústico o minimalista—, son el lienzo perfecto para telas, lazos, flores o iluminación ambiental. Su estructura ligera facilita el montaje y desmontaje sin sacrificar resistencia ni estabilidad. La belleza se combina con la funcionalidad para transformar salones, jardines o espacios abiertos en escenarios de ensueño.</p>
+
+                    <p>Ya sea una boda íntima bajo las estrellas o un quinceañero lleno de brillo y emoción, estas sillas multifacéticas acompañan el momento sin robarle protagonismo. Diseñadas para impresionar y construidas para durar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Haz que tu espacio hable de ti</h2>
+            <p class="cta-text">No se trata solo de comprar sillas.</p>
+            <p class="cta-description">Se trata de crear experiencias, elevar tus eventos y destacar tu estilo con piezas que combinan diseño, confort y presencia.</p>
+            <p class="cta-contact">Contáctanos hoy y descubre cómo transformar cada ocasión en algo inolvidable.</p>
+            <p class="cta-final">Porque el momento perfecto comienza con una buena decisión… y esa decisión empieza ahora.</p>
+            <a href="https://wa.me/18093901108" class="btn-cta">Contactar Ahora</a>
         </div>
     </section>
 
@@ -291,12 +454,12 @@
                     <div class="contact-icon">📱</div>
                     <h3>WhatsApp</h3>
                     <p>Escríbenos directamente</p>
-                    <a href="https://wa.me/18295635402" class="btn-contact">Enviar Mensaje</a>
+                    <a href="https://wa.me/18093901108" class="btn-contact">Enviar Mensaje</a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
                     <h3>Email</h3>
-                    <p>info@fanasillas.com</p>
+                    <p>info@medinasillas.com</p>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">📍</div>
@@ -312,26 +475,24 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Faña Sillas y Más</h3>
+                    <h3>Medina Sillas y Más</h3>
                     <p>Tu mejor opción en sillas para iglesias</p>
                 </div>
                 <div class="footer-section">
                     <h4>Enlaces</h4>
                     <a href="#inicio">Inicio</a>
                     <a href="#catalogo">Catálogo</a>
+                    <a href="#nosotros">Nosotros</a>
                     <a href="#contacto">Contacto</a>
                 </div>
                 <div class="footer-section">
-                    <h4>Síguenos</h4>
-                    <div class="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">WhatsApp</a>
-                    </div>
+                    <h4>Contacto</h4>
+                    <p>WhatsApp: (809) 390-1108</p>
+                    <p>info@medinasillas.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Faña Sillas y Más. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Medina Sillas y Más. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
