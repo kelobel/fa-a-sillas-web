@@ -78,7 +78,7 @@ function updateCart() {
 // Enviar pedido por WhatsApp
 function sendToWhatsApp() {
     const products = document.querySelectorAll('.product-card');
-    let message = '¡Hola! Me interesa hacer un pedido de *Medina Sillas y Más*:\n\n';
+    let message = '¡Hola! Me interesa hacer un pedido de *Sillas América*:\n\n';
     let hasProducts = false;
 
     products.forEach(product => {

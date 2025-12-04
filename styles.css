@@ -6,24 +6,27 @@
 }
 
 :root {
-    /* Colores elegantes negro y dorado */
-    --primary-color: #000000;
-    --primary-dark: #0a0a0a;
-    --primary-light: #1a1a1a;
-    --secondary-color: #d4af37;
-    --accent-color: #f4d03f;
-    --gold: #d4af37;
-    --gold-light: #f4d03f;
-    --gold-dark: #b8941e;
+    /* Colores oficiales de Sillas América */
+    --primary-color: #818285;
+    --primary-dark: #6a6b6d;
+    --primary-light: #999a9c;
+    --secondary-color: #9E1B22;
+    --accent-color: #C22229;
+    --red-wine: #9E1B22;
+    --red-wine-light: #C22229;
+    --red-wine-dark: #7A1519;
+    --gray: #818285;
+    --gray-light: #999a9c;
+    --gray-dark: #6a6b6d;
     --success-color: #25d366;
     --text-dark: #1a1a1a;
     --text-light: #666;
     --bg-light: #f8f8f8;
-    --bg-dark: #1a1a1a;
+    --bg-dark: #818285;
     --white: #ffffff;
     --shadow: 0 4px 20px rgba(0,0,0,0.15);
     --shadow-hover: 0 8px 30px rgba(0,0,0,0.25);
-    --shadow-gold: 0 4px 20px rgba(212,175,55,0.3);
+    --shadow-red: 0 4px 20px rgba(158,27,34,0.3);
 }
 
 body {
@@ -74,15 +77,15 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-    color: var(--white);
+    background: var(--white);
+    color: var(--primary-color);
     padding: 0.8rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: var(--shadow);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--gold);
+    border-bottom: 1px solid var(--red-wine);
 }
 
 .header .container {
@@ -95,16 +98,15 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    margin-left: -120px;
+    margin-left: 0;
 }
 
 .logo-image {
-    height: 180px;
+    height: 60px;
     width: auto;
     object-fit: contain;
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
     transition: transform 0.3s ease;
-    margin: -60px 0;
+    margin: 0;
 }
 
 .logo-image:hover {
@@ -116,14 +118,14 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--white);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: var(--primary-color);
+    text-shadow: none;
 }
 
 .logo span {
-    color: var(--gold);
+    color: var(--red-wine);
     font-weight: 700;
-    text-shadow: 0 0 15px rgba(212,175,55,0.6), 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 0 15px rgba(158,27,34,0.6), 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .nav {
@@ -132,15 +134,14 @@ body {
 }
 
 .nav a {
-    color: var(--white);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .nav a:hover {
-    color: var(--gold);
-    text-shadow: 0 0 10px rgba(212,175,55,0.5);
+    color: var(--red-wine);
 }
 
 /* Hero Section */
@@ -160,7 +161,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(212,175,55,0.1) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, rgba(158,27,34,0.1) 50%, transparent 70%);
     animation: shine 3s infinite;
 }
 
@@ -178,7 +179,7 @@ body {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
-    background: linear-gradient(to right, var(--white), var(--gold));
+    background: linear-gradient(to right, var(--white), var(--red-wine));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -194,7 +195,7 @@ body {
 
 .btn-primary {
     display: inline-block;
-    background: linear-gradient(135deg, var(--gold-dark), var(--gold-light));
+    background: linear-gradient(135deg, var(--red-wine-dark), var(--red-wine-light));
     color: var(--primary-color);
     padding: 1.2rem 3rem;
     border-radius: 50px;
@@ -203,14 +204,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: all 0.4s;
-    box-shadow: var(--shadow-gold);
-    border: 2px solid var(--gold);
+    box-shadow: var(--shadow-red);
+    border: 2px solid var(--red-wine);
 }
 
 .btn-primary:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 10px 40px rgba(212,175,55,0.5);
-    background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+    box-shadow: 0 10px 40px rgba(158,27,34,0.5);
+    background: linear-gradient(135deg, var(--red-wine-light), var(--red-wine-dark));
 }
 
 /* Catálogo Section */
@@ -240,7 +241,7 @@ body {
     transform: translateX(-50%);
     width: 100px;
     height: 3px;
-    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    background: linear-gradient(to right, transparent, var(--red-wine), transparent);
 }
 
 .section-subtitle {
@@ -266,6 +267,9 @@ body {
     border: 2px solid transparent;
     position: relative;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .product-card::before {
@@ -275,7 +279,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, transparent, rgba(212,175,55,0.1));
+    background: linear-gradient(135deg, transparent, rgba(158,27,34,0.1));
     opacity: 0;
     transition: opacity 0.4s;
     z-index: 1;
@@ -288,8 +292,8 @@ body {
 
 .product-card:hover {
     transform: translateY(-15px) scale(1.02);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.3), 0 0 0 3px var(--gold), 0 0 20px rgba(212,175,55,0.4);
-    border-color: var(--gold);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3), 0 0 0 3px var(--red-wine), 0 0 20px rgba(158,27,34,0.4);
+    border-color: var(--red-wine);
 }
 
 .product-image {
@@ -315,7 +319,7 @@ body {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: linear-gradient(135deg, var(--gold-dark), var(--gold-light));
+    background: linear-gradient(135deg, var(--red-wine-dark), var(--red-wine-light));
     color: var(--primary-color);
     padding: 0.5rem 1.2rem;
     border-radius: 25px;
@@ -323,7 +327,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(212,175,55,0.4);
+    box-shadow: 0 4px 15px rgba(158,27,34,0.4);
     z-index: 2;
     animation: pulse 2s infinite;
 }
@@ -335,6 +339,9 @@ body {
 
 .product-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .product-name {
@@ -360,7 +367,7 @@ body {
 }
 
 .product-features span {
-    color: var(--gold-dark);
+    color: var(--red-wine-dark);
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -371,6 +378,7 @@ body {
     align-items: center;
     padding-top: 1rem;
     border-top: 1px solid #eee;
+    margin-top: auto;
 }
 
 .quantity-control {
@@ -384,8 +392,8 @@ body {
 
 .qty-btn {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    color: var(--gold);
-    border: 2px solid var(--gold);
+    color: var(--red-wine);
+    border: 2px solid var(--red-wine);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -396,10 +404,10 @@ body {
 }
 
 .qty-btn:hover {
-    background: linear-gradient(135deg, var(--gold-dark), var(--gold-light));
+    background: linear-gradient(135deg, var(--red-wine-dark), var(--red-wine-light));
     color: var(--primary-color);
     transform: scale(1.15);
-    box-shadow: 0 5px 15px rgba(212,175,55,0.4);
+    box-shadow: 0 5px 15px rgba(158,27,34,0.4);
 }
 
 .qty-input {
@@ -412,7 +420,7 @@ body {
 }
 
 .product-price {
-    color: var(--gold-dark);
+    color: var(--red-wine-dark);
     font-weight: 700;
     font-size: 1rem;
     letter-spacing: 1px;
@@ -465,7 +473,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 2px solid var(--gold);
+    border-bottom: 2px solid var(--red-wine);
     padding-bottom: 0.5rem;
 }
 
@@ -613,7 +621,7 @@ body {
 
 .btn-contact {
     display: inline-block;
-    background: linear-gradient(135deg, var(--gold-dark), var(--gold-light));
+    background: linear-gradient(135deg, var(--red-wine-dark), var(--red-wine-light));
     color: var(--primary-color);
     padding: 0.8rem 2rem;
     border-radius: 25px;
@@ -622,13 +630,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--red-wine);
 }
 
 .btn-contact:hover {
-    background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+    background: linear-gradient(135deg, var(--red-wine-light), var(--red-wine-dark));
     transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(212,175,55,0.4);
+    box-shadow: 0 8px 25px rgba(158,27,34,0.4);
 }
 
 /* Footer */
@@ -648,7 +656,7 @@ body {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: var(--gold);
+    color: var(--red-wine);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -691,7 +699,7 @@ body {
     }
     
     .logo {
-        margin-left: -20px;
+        margin-left: 0;
     }
     
     .logo h1 {
@@ -699,8 +707,8 @@ body {
     }
     
     .logo-image {
-        height: 80px;
-        margin: -15px 0;
+        height: 50px;
+        margin: 0;
     }
     
     .nav {
@@ -776,8 +784,8 @@ body {
     }
     
     .logo-image {
-        height: 70px;
-        margin: -12px 0;
+        height: 45px;
+        margin: 0;
     }
     
     .nav {
@@ -941,7 +949,7 @@ html {
     padding: 1.5rem;
     background: var(--white);
     border-radius: 15px;
-    border: 3px solid var(--gold);
+    border: 3px solid var(--red-wine);
     box-shadow: 0 10px 50px rgba(0,0,0,0.5);
     overflow-y: auto;
     display: flex;
@@ -961,7 +969,7 @@ html {
 }
 
 .gallery-close:hover {
-    color: var(--gold);
+    color: var(--red-wine);
     transform: scale(1.2);
 }
 
@@ -988,14 +996,14 @@ html {
     max-height: 50vh;
     object-fit: contain;
     border-radius: 10px;
-    border: 2px solid var(--gold);
+    border: 2px solid var(--red-wine);
 }
 
 .gallery-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: linear-gradient(135deg, var(--gold-dark), var(--gold-light));
+    background: linear-gradient(135deg, var(--red-wine-dark), var(--red-wine-light));
     color: var(--primary-color);
     border: none;
     font-size: 2rem;
@@ -1009,7 +1017,7 @@ html {
 
 .gallery-nav:hover {
     transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 5px 20px rgba(212,175,55,0.5);
+    box-shadow: 0 5px 20px rgba(158,27,34,0.5);
 }
 
 .gallery-nav.prev {
@@ -1055,9 +1063,9 @@ html {
 }
 
 .gallery-thumbnail.active {
-    border-color: var(--gold);
+    border-color: var(--red-wine);
     opacity: 1;
-    box-shadow: 0 0 15px rgba(212,175,55,0.5);
+    box-shadow: 0 0 15px rgba(158,27,34,0.5);
 }
 
 /* Responsive para galería */
@@ -1114,7 +1122,7 @@ html {
 
 .about-header .section-title {
     font-size: 3rem;
-    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    background: linear-gradient(135deg, var(--red-wine) 0%, var(--red-wine-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1146,8 +1154,8 @@ html {
     background: white;
     padding: 50px;
     border-radius: 20px;
-    box-shadow: var(--shadow-gold);
-    border: 2px solid var(--gold);
+    box-shadow: var(--shadow-red);
+    border: 2px solid var(--red-wine);
 }
 
 .owner-image {
@@ -1184,7 +1192,7 @@ html {
 }
 
 .owner-info p:last-child {
-    color: var(--gold-dark);
+    color: var(--red-wine-dark);
     font-weight: 600;
     font-style: italic;
 }
@@ -1230,13 +1238,13 @@ html {
     padding: 30px;
     border-radius: 15px;
     box-shadow: var(--shadow);
-    border-left: 4px solid var(--gold);
+    border-left: 4px solid var(--red-wine);
     transition: all 0.3s ease;
 }
 
 .feature-item:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-gold);
+    box-shadow: var(--shadow-red);
 }
 
 .feature-item h4 {
@@ -1269,14 +1277,14 @@ html {
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: var(--gold-light);
+    color: var(--red-wine-light);
     margin-bottom: 10px;
 }
 
 .category-title {
     font-size: 3.5rem;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--red-wine);
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
@@ -1293,12 +1301,12 @@ html {
     border-radius: 15px;
     margin-bottom: 60px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(212,175,55,0.3);
+    border: 1px solid rgba(158,27,34,0.3);
 }
 
 .innovation-title {
     font-size: 2rem;
-    color: var(--gold-light);
+    color: var(--red-wine-light);
     text-align: center;
     margin-bottom: 25px;
     font-weight: 600;
@@ -1320,7 +1328,7 @@ html {
 .showcase-title {
     font-size: 2.5rem;
     text-align: center;
-    color: var(--gold);
+    color: var(--red-wine);
     margin-bottom: 40px;
     font-weight: 700;
 }
@@ -1343,7 +1351,7 @@ html {
 
 .showcase-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 40px rgba(212,175,55,0.4);
+    box-shadow: 0 12px 40px rgba(158,27,34,0.4);
 }
 
 .showcase-card h4 {
@@ -1365,7 +1373,7 @@ html {
 
 .color-palette h4 {
     font-size: 1.3rem;
-    color: var(--gold-light);
+    color: var(--red-wine-light);
     margin-bottom: 20px;
 }
 
@@ -1397,7 +1405,7 @@ html {
 
 .design-title {
     font-size: 2.5rem;
-    color: var(--gold);
+    color: var(--red-wine);
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
@@ -1416,7 +1424,7 @@ html {
 }
 
 .events-header .category-label {
-    color: var(--gold-dark);
+    color: var(--red-wine-dark);
 }
 
 .events-header .category-title {
@@ -1438,7 +1446,7 @@ html {
 
 .events-subtitle {
     font-size: 1.3rem;
-    color: var(--gold-dark);
+    color: var(--red-wine-dark);
     text-align: center;
     margin-bottom: 40px;
     font-style: italic;
@@ -1449,7 +1457,7 @@ html {
     padding: 40px;
     border-radius: 15px;
     box-shadow: var(--shadow);
-    border-left: 5px solid var(--gold);
+    border-left: 5px solid var(--red-wine);
 }
 
 .events-description p {
@@ -1467,7 +1475,7 @@ html {
    CALL TO ACTION SECTION
    =================================== */
 .cta-section {
-    background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 50%, var(--gold-light) 100%);
+    background: linear-gradient(135deg, var(--red-wine-dark) 0%, var(--red-wine) 50%, var(--red-wine-light) 100%);
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -1508,7 +1516,7 @@ html {
 .btn-cta {
     display: inline-block;
     background: var(--primary-color);
-    color: var(--gold-light);
+    color: var(--red-wine-light);
     padding: 18px 50px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -1516,7 +1524,7 @@ html {
     border-radius: 50px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
-    border: 2px solid var(--gold-light);
+    border: 2px solid var(--red-wine-light);
 }
 
 .btn-cta:hover {
